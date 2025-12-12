@@ -109,26 +109,42 @@
     }
 
     /* Project Cards */
-    .project-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .project-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    .project-card img {
-      max-width: 100%;
-      border-radius: 6px;
-      margin-bottom: 15px;
-    }
-    .project-card h3 {
-      margin-top: 0;
-      color: #1f2a44;
-    }
+   .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #fff;
+}
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.project-card img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+.project-card h3 {
+  margin-top: 0;
+  color: #1f2a44;
+}
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1f2a44;
+  font-weight: 600;
+  text-decoration: none;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+
 
     /* Contact Form */
     form {
@@ -163,7 +179,7 @@
   <header>
     <div class="hero-content">
       <h1>PRITHIKA GOPINATH</h1>
-      <p class="tagline">Cybersecurity Student | Developer | Privacy Advocate</p>
+      <p class="tagline">Cybersecurity Student | Developer | CSI Ambassador</p>
       <a href="#projects" class="cta-button">View My Work</a>
     </div>
   </header>
@@ -198,14 +214,29 @@
 
   <!-- Projects -->
   <section id="projects">
-    <h2>Projects</h2>
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
     <div class="project-card">
       <img src="https://via.placeholder.com/600x300" alt="Password Audit Project">
       <h3>Password Audit with John the Ripper</h3>
       <p>Simulated MD5 hash cracking using Kali Linux and documented the process on GitHub.</p>
       <a href="https://github.com/Prithika1810/johnlab-hashhunter" target="_blank">View Project on GitHub</a>
     </div>
-  </section>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="https://via.placeholder.com/600x300" alt="AWS Project Screenshot">
+      <h3>AWS Cloud Project (Competition)</h3>
+      <p>Developed and deployed a cloud-based solution using AWS services as part of a competition. 
+         Focused on scalability, security, and efficient resource management.</p>
+      <a href="YOUR_AWS_PROJECT_LINK_HERE" target="_blank">View AWS Project</a>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Skills -->
   <section id="skills">
@@ -234,8 +265,8 @@
   <h2>Education</h2>
   <div class="edu-card">
     <h3>BSc Computer Science (Hons)</h3>
-    <p><strong>London South Bank University</strong> — Expected September 2024</p>
-    <p>Specialization: Cybersecurity, Software Development, Data Analysis</p>
+    <p><strong>London South Bank University</strong> — September 2024 ~ Present</p>
+    <p>Specialization: Cybersecurity, Software Development</p>
 
     <h4>Year 1 Modules</h4>
     <ul>
