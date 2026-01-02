@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Prithika Gopinath | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
       margin: 0;
@@ -12,6 +13,19 @@
       background-color: #f4f4f4;
       color: #333;
       scroll-behavior: smooth;
+    }
+
+    /* Fade + Slide Animation */
+    .fade-section {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlide 1.2s ease forwards;
+    }
+    @keyframes fadeSlide {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Hero Section */
@@ -34,12 +48,12 @@
     .hero-content h1 {
       font-size: 60px;
       margin-bottom: 20px;
-      animation: fadeInDown 2s ease;
+      animation: fadeSlide 1.5s ease forwards;
     }
     .hero-content .tagline {
       font-size: 22px;
       margin-bottom: 30px;
-      animation: fadeInUp 2.5s ease;
+      animation: fadeSlide 2s ease forwards;
     }
     .cta-button {
       display: inline-block;
@@ -54,14 +68,6 @@
     .cta-button:hover {
       transform: scale(1.1);
       background-color: #ffd633;
-    }
-    @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
     }
 
     /* Navigation */
@@ -145,6 +151,49 @@
       text-decoration: underline;
     }
 
+    /* Contact Section */
+    .contact-links {
+      margin-bottom: 20px;
+      font-size: 18px;
+      text-align: center;
+    }
+    .contact-links a {
+      color: #1f2a44;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px;
+      background-color: #1f2a44;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #3b4d70;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -163,6 +212,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- Hero Section -->
@@ -187,14 +237,14 @@
   </nav>
 
   <!-- About -->
-  <section id="about">
+  <section id="about" class="fade-section">
     <h2>About Me</h2>
     <p>I’m a second-year BSc Computer Science student at London South Bank University, currently strengthening my skills in cybersecurity and practical computing. I enjoy working with Linux, scripting, and hands-on security tasks that help me understand how systems behave in real environments.</p>
     <p>I’m building my portfolio through consistent projects, technical documentation, and self-driven learning. My goal is to develop a strong foundation in cybersecurity while continuing to grow through practical experience and university coursework.</p>
   </section>
 
   <!-- Experience -->
-  <section id="experience">
+  <section id="experience" class="fade-section">
     <h2>Experience</h2>
     <ul>
       <li>CSI Student Ambassador at LSBU (2024–Present)</li>
@@ -205,11 +255,10 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="fade-section">
     <h2>Projects</h2>
     <div class="projects-grid">
 
-      <!-- Project 1 -->
       <div class="project-card">
         <img src="https://via.placeholder.com/600x300" alt="Password Audit Project">
         <h3>Password Audit with John the Ripper</h3>
@@ -217,7 +266,6 @@
         <a href="https://github.com/Prithika1810/johnlab-hashhunter" target="_blank">View Project on GitHub</a>
       </div>
 
-      <!-- Project 2 -->
       <div class="project-card">
         <img src="https://via.placeholder.com/600x300" alt="Cybersecurity Challenge">
         <h3>100 Days of Cybersecurity (Ongoing)</h3>
@@ -229,7 +277,7 @@
   </section>
 
   <!-- Competitions -->
-  <section id="competition">
+  <section id="competition" class="fade-section">
     <h2>Competitions</h2>
     <div class="projects-grid">
 
@@ -248,7 +296,7 @@
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="fade-section">
     <h2>Skills</h2>
     <ul>
       <li>Cybersecurity fundamentals</li>
@@ -261,7 +309,7 @@
   </section>
 
   <!-- Certifications -->
-  <section id="certifications">
+  <section id="certifications" class="fade-section">
     <h2>Certifications</h2>
     <ul>
       <li>Certified in Cybersecurity (CC) – In Progress</li>
@@ -272,7 +320,7 @@
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="fade-section">
     <h2>Education</h2>
     <div class="edu-card">
       <h3>BSc Computer Science (Hons)</h3>
@@ -297,22 +345,22 @@
     </div>
   </section>
 
-<!-- Contact -->
-<section id="contact" class="fade-in">
-  <h2>Contact</h2>
-  <div class="contact-links">
-    <p><strong>Email:</strong> <a href="mailto:prithika181006@gmail.com">prithika181006@gmail.com</a></p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prithika-gopinath-201934324" target="_blank">prithika-gopinath</a></p>
-  </div>
+  <!-- Contact -->
+  <section id="contact" class="fade-section">
+    <h2>Contact</h2>
 
-  <form action="mailto:prithika181006@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
+    <div class="contact-links">
+      <p><strong>Email:</strong> <a href="mailto:prithika181006@gmail.com">prithika181006@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prithika-gopinath-201934324" target="_blank">prithika-gopinath</a></p>
+    </div>
 
+    <form action="mailto:prithika181006@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
 
   <footer>
     <p>&copy; 2025 Prithika Gopinath</p>
@@ -325,6 +373,7 @@
 
 </body>
 </html>
+
 
 
       
