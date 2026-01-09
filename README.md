@@ -1,4 +1,5 @@
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=24&pause=1000&color=0A84FF&center=true&vCenter=true&width=435&lines=🔐+Cybersecurity+Student+@+LSBU;🧠+Linux+%7C+Networking+%7C+Digital+Forensics;🎯+Mapped+Projects+%7C+Clean+Documentation+%7C+Cyber+Dark+Mode" alt="Typing SVG" />
+<img src="banner.png" alt="Prithika Cybersecurity Banner" />
+
 
 ---
 
