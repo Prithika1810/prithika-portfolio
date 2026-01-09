@@ -3,15 +3,14 @@
 
 ---
 
-## 👋 Hi, I'm Prithika  
+## 👋 Hi, I'm Prithika Gopinath 
 • Second Year BSc Computer Science (Hons) student • CSI Student Ambassador • Cybersecurity Portfolio Builder • Markdown Table Fixer
 
 ---
 
-## 🧠 Currently Working On  
-- 🧪 TryHackMe: Phishing Emails in Action  
+## 🧠 Currently Working On   
 - 📘 GitHub table mapping & markdown troubleshooting  
-- 🎨 Portfolio redesign (cyber dark mode + accent blue)  
+- 🎨 Portfolio redesign  
 - 🛠️ Progressive cybersecurity projects for GitHub & LinkedIn  
 
 ---
@@ -25,19 +24,30 @@
 
 ---
 
+## 💻 Languages I Use & Practice
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+---
+
 ## 📁 Featured Projects  
 
-### 🧠 Phishing Email Analysis  
-Mapped investigation of malicious headers, payloads, and indicators of compromise.  
-**Stack:** Linux • Forensics • Networking  
-
-### 🧊 GitHub Table Formatter  
-Iterative markdown troubleshooting with mapped fixes and visual clarity.  
-**Stack:** GitHub • Markdown  
-
-### 🔍 Weekly Cybersecurity Study Logs  
-Structured, colour‑coded documentation of weekly learning, challenges, and mapped workflows.  
+### 🔍 100-Days---100-Cybersecurity---Projects
+Documenting a 100-day journey of building practical cybersecurity projects with mapped clarity.
+Includes phishing analysis, log forensics, and markdown documentation.
 **Stack:** GitHub • Markdown • Linux  
+
+### 🔍 DataGuardian-AI-Privacy-Coach
+AI-powered privacy coach with risk detection, scenario analysis, and actionable digital safety guidance.
+**Stack:** Python • AI • Cybersecurity • GitHub
+
+### 🔍 HashHunter: Cracking MD5 Passwords with John the Ripper
+MD5 password cracking lab using John the Ripper in Kali Linux.
+Mapped forensics workflow to identify, crack, and document hash vulnerabilities.
+**Stack:** Kali Linux • John the Ripper • Bash • Cybersecurity
 
 ---
 
@@ -52,12 +62,6 @@ Structured, colour‑coded documentation of weekly learning, challenges, and map
 - Linux administration  
 - Networking fundamentals  
 - Cybersecurity project documentation  
-
----
-
-## 🎧 Workflow Vibe  
-> Cyber dark mode. Accent blue. Minimal animations.  
-> Mapped clarity. No clutter. Full control.
 
 ---
 
